@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="doc">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial scale=1.0">
+<meta name="author" content="João">
+<title>Grids</title>
+<style>
+
+.q1{display: grid;
+grid-template-rows: 50px;
+grid-template-columns: 200px;
+grid-column: auto;
+}
+
+.me1{border-style: solid;
+background-color: aquamarine;
+height: 100px;}
+
+.ma1{border-style: solid; 
+}
+
+.q2{display: grid;
+grid-template-rows: 40px;
+grid-template-columns: 200px;
+grid-template-rows: min-content 100px;
+}
+
+.me2{background-color: beige;
+height: 30px;border-style: solid}
+
+.ma2{background-color: cadetblue;border-style: solid}
+
+.p2{background-color: bisque;border-style: solid}
+
+.q3{display: grid;
+grid-template-columns: 40px 160px;
+grid-template-rows: 100px;
+}
+
+.ma3{background-color: brown;border-style: solid;}
+
+.me3{background-color: burlywood;border-style: solid;}
+
+
+.q4{display: grid;
+  grid-template-columns: 50px 100px 50px;
+  grid-template-rows: 120px}
+
+.g4{background-color: aquamarine;
+border-style: solid;}
+
+.p4{background-color: darkblue;
+border-style: solid;}
+
+.q5{display: grid;
+    grid-template-rows: 50px 20px 90px ;
+grid-template-columns: 50px 70px 80px;
+grid-template-areas: "g5 g5 g5"
+                    "p5 m5 m5" 
+                    "p5 m5 m5";
+}
+.p5{border-style: solid;
+background-color: crimson;
+grid-area: p5;
+}
+
+.m5{border-style: solid;
+background-color: violet;
+grid-area: m5 ;
+}
+
+.g5{border-style: solid;
+background-color: tomato;
+grid-area: g5;
+}
+
+.q6{display: grid;
+
+grid-template-columns: 50px 50px 50px 50px;
+grid-template-rows: 50px 50px 50px 50px;
+   
+}
+
+.p6{border-style: solid;
+background-color: sandybrown;
+grid-column: repeat(2);
+grid-column: 1/1;
+grid-row: 2/4;
+}
+
+.m6{border-style: solid;
+background-color: yellow;
+grid-column: 2/4;
+grid-row: 2/4;
+}
+
+.g6{border-style: solid;
+background-color: dimgray;
+grid-column: 1/5;
+
+}
+
+.p62{border-style: solid;
+background-color: sandybrown;
+
+grid-column: 4/4;
+grid-row: 2/4;}
+
+
+.q7{display: grid;
+grid-template-columns: 50px 50px 50px 50px;
+grid-template-rows: 50px 50px 50px 50px;
+}
+
+.l7{background-color: darkviolet;
+    border-style: solid;
+grid-column: 1/2;
+grid-row: 2/5;
+}
+
+.m7{background-color: brown;
+    border-style: solid;
+grid-column: 2/5;
+grid-row: 2/5;
+}
+
+.b7{background-color: palegoldenrod;
+    border-style: solid;
+grid-column: 1/5;
+grid-row: 5/5;
+
+}
+
+.a7{background-color: green;
+    border-style: solid;
+grid-row: 1/1;
+grid-column: 1/5;
+}
+
+.q8{display: grid;
+grid-template-columns: 50px 50px 50px 50px;
+grid-template-rows: 50px 50px 50px 50px;
+}
+
+.a8{border-style: solid;
+background-color: rgb(97, 41, 41);
+grid-column: 1/5;
+grid-row: 1/1;
+}
+
+.l8{border-style: solid;
+background-color: blue;
+grid-column: 1/1;
+grid-row: 2/5;
+
+}
+
+.l82{border-style: solid;
+background-color: peru;
+grid-column: 4/4;
+grid-row: 2/5;
+
+}
+
+.b8{border-style: solid;
+background-color: orchid;
+grid-column: 1/5;
+grid-row: 5/5;
+
+}
+
+.m8{border-style: solid;
+background-color: darkslateblue;
+grid-column: 2/4;
+grid-row: 2/5;
+
+}
+
+
+</style>
+</head>
+
+<body>
+    <section class="q1">
+        <div class="ma1">1</div>
+        <div class="me1">1</div>
+    </section>
+<br><br>
+<section class="q2">
+<div class="me2">2</div>
+<div class="ma2">2</div>
+<div class="p2">2</div>
+</section>
+<br><br>
+
+<section class="q3">
+    <div class="ma3">3</div>
+    <div class="me3">3</div>
+</section>
+<br><br>
+<section class="q4">
+<div class="p4">4</div>
+<div class="g4">4</div>
+<div class="p4">4</div>
+</section>
+<br><br>
+<section class="q5">
+<div class="p5">5</div>
+<div class="m5">5</div>
+<div class="g5">5</div>
+</section>
+<br><br>
+<section class="q6">
+<div class="p62">6</div>
+<div class="p6">6</div>
+<div class="g6">6</div>
+<div class="m6">6</div>
+</section>
+<br><br>
+<section class="q7">
+<div class="l7">7</div>
+<div class="m7">7</div>
+<div class="b7">7</div>
+<div class="a7">7</div>
+</section>
+<br><br>
+<section class="q8">
+<div class="a8">8</div>
+<div class="l8">8</div>
+<div class="l82">8</div>
+<div class="b8">8</div>
+<div class="m8">8</div>
+</section>
+
+</body>
+
+</html>
